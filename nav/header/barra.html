@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<script src="Busqueda.js"></script>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+#miFont {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 12px;
+letter-spacing: 0.4px;
+word-spacing: 0.8px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+body {
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #F385FF;
+  //Colores tipo web Manicurista
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home" id="miFont">Principal</a>
+  <a href="#about" id="miFont">Acerca de Nosotros</a>
+  <a href="#contact" id="miFont">Contacto</a>
+</div>
+
+<div style="padding-left:16px" id="miFont">
+  <h2>Prueba La Manicurista</h2>
+  <p>Garantizar seguridad de recursos compartidos al ordenar multiples dependencias.</p>
+  <div>
+                    <input type="text" placeholder="Busqueda en sitio" id="search_text">
+                    <input type="submit"  value="Buscar" id="search_submit"> 
+  </div>
+</div>
+
+</body>
+</html>
